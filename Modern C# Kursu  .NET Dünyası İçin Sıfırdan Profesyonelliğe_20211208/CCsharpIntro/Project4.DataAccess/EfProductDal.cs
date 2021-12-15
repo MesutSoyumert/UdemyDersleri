@@ -58,6 +58,7 @@ namespace Project4.DataAccess
 
         public void Add(Product product)
         {
+            throw new Exception("Veri tabanına bağlanılamadı");
             Console.WriteLine("Entity Framework ile ürün eklendi"); ;
         }
 
