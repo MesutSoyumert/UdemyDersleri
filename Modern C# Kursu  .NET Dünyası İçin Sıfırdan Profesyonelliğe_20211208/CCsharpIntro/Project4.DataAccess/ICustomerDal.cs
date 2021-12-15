@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Project4.DataAccess
 {
-    public interface IProductDal : IEntityRepository<Product>   
+    public interface ICustomerDal : IEntityRepository<Customer>
     {
     }
 }

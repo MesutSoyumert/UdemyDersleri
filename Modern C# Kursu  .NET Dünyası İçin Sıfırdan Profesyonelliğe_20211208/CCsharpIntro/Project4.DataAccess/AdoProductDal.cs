@@ -51,7 +51,22 @@ namespace Project4.DataAccess
             Console.WriteLine("Ado.net ile ürün eklendi");
         }
 
+        public void Update(Product product)
+        {
+            Console.WriteLine("Ado.net ile ürün güncellendi");
+        }
+
+        public void Delete(Product product)
+        {
+            Console.WriteLine("Ado.net ile ürün silindi");
+        }
+
         public List<Product> GetAll()
+        {
+            return _products;
+        }
+
+        public List<Product> GetById(int id)
         {
             return _products;
         }

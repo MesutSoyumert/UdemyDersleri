@@ -46,14 +46,28 @@ namespace Project4.DataAccess
             };
         }
 
+        public List<Product> GetAll()
+        {
+            return _products;
+        }
+
+        public List<Product> GetById(int id)
+        {
+            return _products;
+        }
+
         public void Add(Product product)
         {
             Console.WriteLine("Entity Framework ile ürün eklendi"); ;
         }
 
-        public List<Product> GetAll()
+        public void Update(Product product)
         {
-            return _products;
+            Console.WriteLine("Entity Framework ile ürün güncellendi"); ;
+        }
+        public void Delete(Product product)
+        {
+            Console.WriteLine("Entity Framework ile ürün silindi"); ;
         }
     }
 }

@@ -1,9 +1,9 @@
-﻿using Odev10.Entities;
+﻿using Odev11.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Odev10.DataAccess
+namespace Odev11.DataAccess
 {
     public class EfCarDal : ICarDal
     {
@@ -52,6 +52,7 @@ namespace Odev10.DataAccess
             };
         }
 
+        
         public List<Car> GetAll()
         {
             return _cars;
@@ -62,19 +63,20 @@ namespace Odev10.DataAccess
             return _cars;
         }
 
-        public void Add(Car car)
+        public void Add(Car entity)
         {
             Console.WriteLine("Ef ile Araç eklendi");
         }
 
-        public void Update(Car car)
+        public void Update(Car entity)
         {
             Console.WriteLine("Ef ile Araç güncellendi");
         }
 
-        public void Delete(Car car)
+        public void Delete(int id)
         {
             Console.WriteLine("Ef ile Araç silindi");
         }
+
     }
 }

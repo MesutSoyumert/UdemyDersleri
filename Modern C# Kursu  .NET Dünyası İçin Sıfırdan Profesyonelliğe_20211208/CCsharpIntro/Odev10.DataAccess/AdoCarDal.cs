@@ -52,14 +52,29 @@ namespace Odev10.DataAccess
             };
         }
 
+        public List<Car> GetAll()
+        {
+            return _cars;
+        }
+
+        public List<Car> GetById(int id)
+        {
+            return _cars;
+        }
+
         public void Add(Car car)
         {
             Console.WriteLine("Ado ile Araç eklendi");
         }
 
-        public List<Car> GetAll()
+        public void Update(Car car)
         {
-            return _cars;
+            Console.WriteLine("Ado ile Araç güncellendi");
+        }
+
+        public void Delete(Car car)
+        {
+            Console.WriteLine("Ado ile Araç silindi");
         }
     }
 }
