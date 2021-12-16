@@ -85,7 +85,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Odev12.DataAccess", "Odev12
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Odev12.Entities", "Odev12.Entities\Odev12.Entities.csproj", "{211AE660-9423-412D-8EC1-3CCC0FE41142}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odev12.ConsoleUI", "Odev12.ConsoleUI\Odev12.ConsoleUI.csproj", "{94B4CBAF-5846-4AA6-9AD1-9EA0598D5AE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Odev12.ConsoleUI", "Odev12.ConsoleUI\Odev12.ConsoleUI.csproj", "{94B4CBAF-5846-4AA6-9AD1-9EA0598D5AE1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqProject", "LinqProject\LinqProject.csproj", "{8ED6FCB6-0438-4BEC-BD41-F8861CCB02A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odev13", "Odev13\Odev13.csproj", "{E247CBED-C09F-4003-9AE7-7B588AEE156A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -261,6 +265,14 @@ Global
 		{94B4CBAF-5846-4AA6-9AD1-9EA0598D5AE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94B4CBAF-5846-4AA6-9AD1-9EA0598D5AE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94B4CBAF-5846-4AA6-9AD1-9EA0598D5AE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ED6FCB6-0438-4BEC-BD41-F8861CCB02A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED6FCB6-0438-4BEC-BD41-F8861CCB02A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED6FCB6-0438-4BEC-BD41-F8861CCB02A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED6FCB6-0438-4BEC-BD41-F8861CCB02A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E247CBED-C09F-4003-9AE7-7B588AEE156A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E247CBED-C09F-4003-9AE7-7B588AEE156A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E247CBED-C09F-4003-9AE7-7B588AEE156A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E247CBED-C09F-4003-9AE7-7B588AEE156A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
