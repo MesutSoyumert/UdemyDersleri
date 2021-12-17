@@ -8,42 +8,43 @@ namespace Project4.DataAccess
     public class AdoProductDal : IProductDal
     {
         List<Product> _products;
+        Product _product;
 
         public AdoProductDal()
         {
-            _products = new List<Product>
-            {
-                new Product{ProductId=1,
-                            ProductName="Ado Acer Bilgisayar",
-                            QuantityPerUnit="32 Gb Ram",
-                            UnitPrice=10000,
-                            UnitsInStock=2
-                },
-                new Product{ProductId=2,
-                            ProductName="Ado Asus Bilgisayar",
-                            QuantityPerUnit="32 Gb Ram",
-                            UnitPrice=10000,
-                            UnitsInStock=1
-                },
-                new Product{ProductId=3,
-                            ProductName="Ado Hp Bilgisayar",
-                            QuantityPerUnit="32 Gb Ram",
-                            UnitPrice=10000,
-                            UnitsInStock=0
-                },
-                new Product{ProductId=4,
-                            ProductName="Ado Mac Bilgisayar",
-                            QuantityPerUnit="32 Gb Ram",
-                            UnitPrice=10000,
-                            UnitsInStock=3
-                },
-                new Product{ProductId=5,
-                            ProductName="Ado Dell Bilgisayar",
-                            QuantityPerUnit="32 Gb Ram",
-                            UnitPrice=10000,
-                            UnitsInStock=10
-                },
-            };
+            //_products = new List<Product>
+            //{
+            //    new Product{ProductId=1,
+            //                ProductName="Ado Acer Bilgisayar",
+            //                QuantityPerUnit="32 Gb Ram",
+            //                UnitPrice=10000,
+            //                UnitsInStock=2
+            //    },
+            //    new Product{ProductId=2,
+            //                ProductName="Ado Asus Bilgisayar",
+            //                QuantityPerUnit="32 Gb Ram",
+            //                UnitPrice=10000,
+            //                UnitsInStock=1
+            //    },
+            //    new Product{ProductId=3,
+            //                ProductName="Ado Hp Bilgisayar",
+            //                QuantityPerUnit="32 Gb Ram",
+            //                UnitPrice=10000,
+            //                UnitsInStock=0
+            //    },
+            //    new Product{ProductId=4,
+            //                ProductName="Ado Mac Bilgisayar",
+            //                QuantityPerUnit="32 Gb Ram",
+            //                UnitPrice=10000,
+            //                UnitsInStock=3
+            //    },
+            //    new Product{ProductId=5,
+            //                ProductName="Ado Dell Bilgisayar",
+            //                QuantityPerUnit="32 Gb Ram",
+            //                UnitPrice=10000,
+            //                UnitsInStock=10
+            //    },
+            //};
         }
 
         public void Add(Product product)
@@ -66,9 +67,9 @@ namespace Project4.DataAccess
             return _products;
         }
 
-        public List<Product> GetById(int id)
+        public Product GetById(int id)
         {
-            return _products;
+            return _product;
         }
     }
 }

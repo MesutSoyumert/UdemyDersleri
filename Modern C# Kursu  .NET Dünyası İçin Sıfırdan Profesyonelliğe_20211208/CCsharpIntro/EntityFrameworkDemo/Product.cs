@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Project4.Entities
+namespace EntityFrameworkDemo
 {
-    public class Product : IEntity
+    public class Product
     {
-        
-        public int ProductId { get; set; }
+        public int ProductId { get; set; } //Primary key
 
-        public int CategoryId { get; set; }
+        public int CategoryId { get; set; } //Foreign key
 
         public string ProductName { get; set; }
 

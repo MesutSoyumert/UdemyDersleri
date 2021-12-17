@@ -8,6 +8,7 @@ namespace Project4.DataAccess
     public class XProductDal : IProductDal
     {
         List<Product> _products;
+        Product _product;
 
         public XProductDal()
         {
@@ -51,9 +52,9 @@ namespace Project4.DataAccess
             return _products;
         }
 
-        public List<Product> GetById(int id)
+        public Product GetById(int id)
         {
-            return _products;
+            return _product;
         }
 
         public void Add(Product product)

@@ -1,11 +1,10 @@
-﻿using Project4.Entities;
+﻿using Odev14.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Project4.DataAccess
+namespace Odev14.DataAccess
 {
-    //class reference type
     public interface IEntityRepository<T> where T : class, IEntity, new()
     {
         List<T> GetAll();

@@ -19,7 +19,7 @@ namespace Project4.Business
         {
             //iş kuralları buraya yazılır
 
-            if (product.ProductName == "Laptop")
+            if (product.ProductName == "Maptop")
             {
                 throw new DuplicateProductException("Laptop ürünü ekleyemezsiniz");
             }
@@ -30,12 +30,27 @@ namespace Project4.Business
             
         }
 
+        public void Delete(Product product)
+        {
+            _productDal.Delete(product);
+        }
+
         public List<Product> GetAll()
         {
 
             //iş kuralları buraya yazılır
 
             return _productDal.GetAll();
+        }
+
+        public Product GetById(int id)
+        {
+            return _productDal.GetById(id);
+        }
+
+        public void Update(Product product)
+        {
+            _productDal.Update(product);
         }
     }
 }
