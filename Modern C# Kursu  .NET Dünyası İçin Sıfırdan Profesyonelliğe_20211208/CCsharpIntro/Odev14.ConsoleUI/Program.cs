@@ -12,6 +12,12 @@ namespace Odev14.ConsoleUI
             BrandManager brandManager = new BrandManager(new EfBrandDal());
 
             //Console.WriteLine(brandManager.GetById(1).BrandName);
+            //Console.WriteLine(brandManager.GetByIdAsync(2).Result.BrandName);
+
+            foreach (var brand in brandManager.GetAllAsync().Result)
+            {
+                Console.WriteLine(brand.BrandName);
+            }
 
             //foreach (var brand in brandManager.GetAll())
             //{
@@ -19,9 +25,9 @@ namespace Odev14.ConsoleUI
             //        brand.BrandId, brand.BrandName);
             //}
 
-            //brandManager.Add(new Entities.Brand { BrandName = "Fiat" });
-            Brand brand = new Brand();
-            brand.BrandId = 1002;
+            brandManager.AddAsync(new Entities.Brand { BrandName = "Tofaş" });
+            //Brand brand = new Brand();
+            //brand.BrandId = 1002;
             //brand.BrandName = "Güncellenen Brand 2";
 
             //brandManager.Update(brand);

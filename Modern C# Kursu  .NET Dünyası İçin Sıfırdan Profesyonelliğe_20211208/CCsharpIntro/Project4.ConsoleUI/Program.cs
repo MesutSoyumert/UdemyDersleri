@@ -11,6 +11,11 @@ namespace Project4.ConsoleUI
         {
             ProductManager productManager = new ProductManager(new EfProductDal());
 
+            foreach (var product in productManager.GetAllAsync().Result)
+            {
+                Console.WriteLine(product.ProductName);
+            }
+
             //productManager.Delete(new Product { ProductId = 80 });
             //,CategoryId = 1, 
             //ProductName = "Masa Güncellenen ürün 3", 
@@ -18,7 +23,7 @@ namespace Project4.ConsoleUI
             //UnitPrice = 1000,
             //UnitsInStock = 10});
 
-            Console.WriteLine(productManager.GetById(1).ProductName);
+            //Console.WriteLine(productManager.GetById(1).ProductName);
             
             //foreach (var product in productManager.GetAll())
             //{
@@ -42,13 +47,13 @@ namespace Project4.ConsoleUI
             //    Console.WriteLine(exception.Message);
             //}
 
-            PersonelManager personelManager = new PersonelManager(new EfPersonelDal());
-
-            foreach (var personel in personelManager.GetAll())
-            {
-                Console.WriteLine("{0} / {1} / {2}",
-                                    personel.Id, personel.Name, personel.SurName);
-            }
+            //PersonelManager personelManager = new PersonelManager(new EfPersonelDal());
+            //
+            //foreach (var personel in personelManager.GetAll())
+            //{
+            //    Console.WriteLine("{0} / {1} / {2}",
+            //                       personel.Id, personel.Name, personel.SurName);
+            //}
         }
     }
 }

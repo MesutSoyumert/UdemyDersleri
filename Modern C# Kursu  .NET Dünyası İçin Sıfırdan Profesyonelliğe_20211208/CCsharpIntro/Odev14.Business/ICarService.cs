@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Odev14.Business
 {
@@ -16,5 +17,15 @@ namespace Odev14.Business
         void Update(Car car);
 
         void Delete(Car car);
+
+        Task<List<Car>> GatAllAsync();
+
+        Task<Car> GetByIdAsync(int id);
+
+        Task AddAsync(Car car);
+
+        Task UpdateAsync(Car car);
+
+        Task DeleteAsync(Car car);
     }
 }

@@ -3,6 +3,7 @@ using Project4.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Project4.Business
 {
@@ -41,6 +42,11 @@ namespace Project4.Business
             //iş kuralları buraya yazılır
 
             return _productDal.GetAll();
+        }
+
+        public Task<List<Product>> GetAllAsync()
+        {
+            return _productDal.GetAllAsync();
         }
 
         public Product GetById(int id)

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Project4.DataAccess
 {
@@ -70,6 +71,31 @@ namespace Project4.DataAccess
         public Product GetById(int id)
         {
             return _product;
+        }
+
+        public Task<List<Product>> GetAllAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Product> GetByIdAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task AddAsync(Product entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task UpdateAsync(Product entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task DeleteAsync(Product entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }

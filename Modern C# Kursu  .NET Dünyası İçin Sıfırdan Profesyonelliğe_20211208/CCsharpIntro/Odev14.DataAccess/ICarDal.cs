@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Odev14.DataAccess
 {
-    public interface ICarDal : IEntityRepository<Car>
+    public interface ICarDal : IEntityRepository<Car>, IAsyncRepository<Car>
     {
     }
 }
