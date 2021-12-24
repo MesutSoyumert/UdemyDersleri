@@ -1,7 +1,7 @@
-﻿using Core.Entities.Concrete;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Core.Entities.Concrete;
 
 namespace Core.Utilities.Security.Jwt
 {
@@ -9,5 +9,4 @@ namespace Core.Utilities.Security.Jwt
     {
         AccessToken CreateToken(User user, List<OperationClaim> operationClaims);
     }
-
 }
