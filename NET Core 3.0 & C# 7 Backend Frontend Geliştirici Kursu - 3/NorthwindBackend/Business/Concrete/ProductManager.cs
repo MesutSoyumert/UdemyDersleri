@@ -33,11 +33,15 @@ namespace Business.Concrete
             _productDal = productDal;
         }
 
+        [LogAspect(typeof(FileLogger))]
+        [LogAspect(typeof(DatabaseLogger))]
         public IDataResult<Product> GetById(int productId)
         {
             return new SuccessDataResult<Product>(_productDal.Get(p => p.ProductId == productId));
         }
 
+        [LogAspect(typeof(FileLogger))]
+        [LogAspect(typeof(DatabaseLogger))]
         [PerformanceAspect(5)]
         public IDataResult<List<Product>> GetList()
         {
@@ -52,7 +56,6 @@ namespace Business.Concrete
         {
             return new SuccessDataResult<List<Product>>(_productDal.GetList(p => p.CategoryId == categoryId).ToList());
         }
-
 
         [ValidationAspect(typeof(ProductValidator),Priority = 1)]
         [CacheRemoveAspect("IProductService.Get")]
