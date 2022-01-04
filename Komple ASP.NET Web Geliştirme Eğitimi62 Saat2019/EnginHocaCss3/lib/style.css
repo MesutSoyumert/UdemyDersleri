@@ -1,0 +1,33 @@
+/* Add your styles here */
+input [type='text'],
+input [type='email'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid blue;
+  border-radius: 3px;
+  color: gray;
+  background-color: white;
+}
+
+input [type='text'],
+input [type='email'],
+input [type='password'] :focus {
+  color: green;
+  background-color: red;
+}
+.myClass {
+  color:red;
+  background-color: blue;
+}p.someClass {
+  color:white;
+  background-color: blue;
+}
+#name {
+  color: blue;
+  background-color: red;
+}
+
+#email {
+  color: white;
+  background-color: purple;
+}
